@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Service — iCar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">iCar AutoService</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="booking.html" class="active">Book a Service</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Book a Service</h1>
+    <p class="muted">Fill the form and submit your appointment request.</p>
+
+    <form id="bookingForm" class="form">
+      <label>
+        Full name
+        <input type="text" id="fullName" required />
+      </label>
+
+      <label>
+        Car model
+        <input type="text" id="carModel" required />
+      </label>
+
+      <label>
+        Service
+        <select id="serviceType" required>
+          <option value="">Select…</option>
+          <option>Diagnostics</option>
+          <option>Oil Change</option>
+          <option>Brake Service</option>
+          <option>Tire Change</option>
+        </select>
+      </label>
+
+      <label>
+        Date
+        <input type="date" id="date" required />
+      </label>
+
+      <label>
+        Time
+        <input type="time" id="time" required />
+      </label>
+
+      <button class="btn-primary" type="submit">Submit booking</button>
+      <p id="message" class="message"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
